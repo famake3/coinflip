@@ -34,7 +34,7 @@ jobs:
           docker compose ps
           
           # One more verification that the app is accessible
-          if curl -f http://localhost:80 > /dev/null 2>&1; then
+          if curl -f http://127.0.0.1:8081/index.html > /dev/null 2>&1; then
             echo "✅ Deployment verified - application is accessible!"
           else
             echo "⚠️  Warning: Application may not be accessible on port 80"
