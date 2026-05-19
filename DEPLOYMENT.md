@@ -70,7 +70,7 @@ sudo chown $USER:$USER /opt/coinflip
 
 # Clone your repository
 cd /opt/coinflip
-git clone https://github.com/famake/coinflip.git .
+git clone https://github.com/famake3/coinflip.git .
 ```
 
 ### 4. Configure Environment
@@ -104,7 +104,7 @@ GitHub Actions supports self-hosted runners that run on your own infrastructure.
 
 ### 1. Create Runner on GitHub
 
-1. Go to your repository on GitHub: `https://github.com/famake/coinflip`
+1. Go to your repository on GitHub: `https://github.com/famake3/coinflip`
 2. Navigate to **Settings** → **Actions** → **Runners**
 3. Click **New self-hosted runner**
 4. Select **Linux** and **x64** architecture
@@ -125,7 +125,7 @@ tar xzf ./actions-runner-linux-x64-2.311.0.tar.gz
 
 # Create the runner and start the configuration
 # Replace TOKEN with the token from GitHub's "New self-hosted runner" page
-./config.sh --url https://github.com/famake/coinflip --token YOUR_RUNNER_TOKEN_HERE
+./config.sh --url https://github.com/famake3/coinflip --token YOUR_RUNNER_TOKEN_HERE
 
 # When prompted:
 # - Enter runner name: coinflip-production
@@ -146,7 +146,7 @@ sudo ./svc.sh start
 sudo ./svc.sh status
 
 # Enable auto-start on boot
-sudo systemctl enable actions.runner.famake-coinflip.coinflip-production.service
+sudo systemctl enable actions.runner.famake3.fmknode.service
 ```
 
 ### 4. Verify Runner

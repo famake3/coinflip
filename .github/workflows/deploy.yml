@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted  # Uses your self-hosted runner
+    runs-on: [self-hosted, fmknode]  # Pin deploys to fmknode, where /opt/coinflip exists
     
     # Set working directory to the main deployment location
     defaults:
@@ -18,6 +18,7 @@ jobs:
     steps:
       - name: Pull latest changes
         run: |
+          git remote set-url origin https://github.com/famake3/coinflip.git
           git fetch origin
           git reset --hard origin/main
           

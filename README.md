@@ -26,7 +26,7 @@ No installation required! Simply open `index.html` in a modern web browser.
 
 ```bash
 # Clone the repository
-git clone https://github.com/famake/coinflip.git
+git clone https://github.com/famake3/coinflip.git
 cd coinflip
 
 # Open in browser
